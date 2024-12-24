@@ -1,6 +1,7 @@
 from flask import Flask
 from src.models  import db
-#from routes.categorias_routes import categorias_bp
+from flask_sqlalchemy import SQLAlchemy
+from src.routes.productos import product_routes
 from config import config
 
 def create_app(config_name):
@@ -12,7 +13,7 @@ def create_app(config_name):
 
     # Registrar blueprints
     #app.register_blueprint(categorias_bp)
-
+    app.register_blueprint(product_routes, url_prefix='/api')
     return app
 
 

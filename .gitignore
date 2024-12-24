@@ -1,4 +1,4 @@
-gitignore 
-APISTORE.code-workspace
+ APISTORE.code-workspace
 .env
 /Virtual
+.gitignore
