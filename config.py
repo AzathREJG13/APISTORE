@@ -1,11 +1,9 @@
-class DevelopmentConfig():
+class DevelopmentConfig:
     DEBUG = True
-    MYSQL_HOST = 'localhost'
-    MYSQL_USER = 'root'
-    MYSQL_PASSWORD = 'miContrasena@123'
-    MYSQL_DB = 'APISTORE'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://rafael1302:123456@localhost:5432/APISTORE'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
 config = {
-    'development': DevelopmentConfig
+    'development': DevelopmentConfig,
 }
