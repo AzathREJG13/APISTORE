@@ -2,3 +2,5 @@
 .env
 /Virtual
 .gitignore
+/__pycache__
+config.py
